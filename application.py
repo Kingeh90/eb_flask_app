@@ -11,9 +11,9 @@ from utils import find_closest_factual_id, find_smart_location, form_geo_query, 
 from middleware import validate_json
 from factual_credentials import key, secret
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/')
 def version():
     return Response(json.dumps({'version': __version__,
             'status': 'live',
@@ -21,7 +21,7 @@ def version():
             'datetime': datetime.now().isoformat()}), mimetype='application/json')
 
 
-@app.route('/task1/<location>/<search_string>')
+@application.route('/task1/<location>/<search_string>')
 def task1(location, search_string):
     """
     :param location: location around which the restaurants are required
@@ -59,7 +59,7 @@ def task1(location, search_string):
         ), 400
 
 
-@app.route('/task2/<location>/<meal_of_the_day>', methods=['POST'])
+@application.route('/task2/<location>/<meal_of_the_day>', methods=['POST'])
 @validate_json
 def task2(location, meal_of_the_day):
     """
@@ -104,4 +104,4 @@ def task2(location, meal_of_the_day):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    application.run(debug=True)
