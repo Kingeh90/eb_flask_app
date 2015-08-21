@@ -9,7 +9,7 @@ Fun mobile app
 Cd into the `eb_flask_app` dir and install the requirements:
     
     cd eb_flask_app
-    pip install -r requirements.txt
+    sudo pip install -r requirements.txt
     
 ## Factual credentials
 Register at `https://www.factual.com/` and generate a factual key and secret. These have to go in the
