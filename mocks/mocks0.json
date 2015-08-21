@@ -1,0 +1,32 @@
+[
+    {
+        "name":	"Bob",
+        "title":	"executive",
+        "likes":	[
+                        "indian",
+                        "chinese",
+                        "malaysian"
+        ],
+        "dislikes":	["Australian"],
+        "requirements": "gluten free"
+    },
+    {
+        "name":	"Jose",
+        "title":	"developer",
+        "likes":	[
+                        "indian",
+                        "chinese"
+        ],
+        "dislikes":	["thai"]
+    },
+    {
+        "name":	"Aloysia",
+        "title":	"evangelist",
+        "likes":	[
+                        "chinese",
+        ],
+        "dislikes":	["Australian"],
+        "requirements": "vegetarian"
+
+    }
+]
